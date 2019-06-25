@@ -1,0 +1,13 @@
+<h2>Edit <%= @rider.name %></h2>
+<%= form_for @rider do |f| %>
+  <%= f.text_field :name %>
+  <%= f.submit %>
+<% end %>
+
+<%# form_tag("/riders/#{@rider.id}", method: "PATCH") do %>
+  <%# text_field_tag "name", @rider.name %>
+  <%# text_field_tag "location", @rider.location %>
+  <%# number_field_tag "height", @rider.height %>
+  <%# number_field_tag "length", @rider.length %>
+  <%# submit_tag "Create that new rider"%>
+<%# end %>

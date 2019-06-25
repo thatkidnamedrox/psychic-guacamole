@@ -20,6 +20,15 @@ rollercoasters = [
   'Thunder Mountain'
 ]
 
+riders = [
+  'Roxanne',
+  'Prince',
+  'Max',
+  'Rina',
+  'Jenna',
+  'Leonie'
+]
+
 parks.each do |park|
   Park.create(
     name: park,
@@ -35,5 +44,11 @@ rollercoasters.each do |rollercoaster|
     height: rand(300),
     length: rand(10),
     park_id: Park.all.sample.id
+  )
+end
+
+riders.each do |rider|
+  Rider.create(
+    name: rider
   )
 end
